@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         private fun initsingularsdk() {
             CoroutineScope(Dispatchers.IO).launch {
                 // Create a configuration object
-                val config = SingularConfig("terafort_new_94135a02", "f212597de5fefa168d4969b84a3bea938ef588cac2d95e2dbf2d3ad171ead777").withLoggingEnabled().withLogLevel(1)
+                val config = SingularConfig("terafort_new_94135a02", "").withLoggingEnabled().withLogLevel(1)
                 // Set up a deep links handler
                 config.withSingularLink(
                     intent
